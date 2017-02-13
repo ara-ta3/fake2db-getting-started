@@ -1,0 +1,3 @@
+fake2db
+Faker
+mysql-connector-python-rf
