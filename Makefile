@@ -2,9 +2,7 @@ DOCKER=$(shell which docker)
 FAKE2DB=env/bin/fake2db
 docker_image=mysql:5.6
 db_name=apps
-n_rows=10000
-
-
+n_rows=100
 password=
 host=127.0.0.1
 
@@ -37,4 +35,5 @@ env/bin/pip:
 virtualenv:
 	virtualenv -p python2 env
 
-
+clean:
+	rm -rf env
